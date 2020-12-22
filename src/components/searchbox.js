@@ -11,15 +11,13 @@ export default class SearchBox extends Component {
 	handleChange = address => {
 		this.setState( { address });
 	};
+
+	handleonClick = () => {
+		console.log('Hehe, we live!')
+	}
 	
 	render () {
 		return (
-			// <div className="search-box">
-			// 	<input className="search-txt" type="text" name="" placeholder="Enter your address..."/>
-			// 	<a className="search-btn" href="#">
-			// 		<i class="fas fa-search-location"></i>
-			// 	</a>
-			// </div>
 			<div className="search-box">
 			<PlacesAutocomplete
 				value={this.state.address}
@@ -34,7 +32,7 @@ export default class SearchBox extends Component {
 						className: 'search-box',
 					})}
 					/>
-					<a className="search-btn" href="#">
+					<a className="search-btn" href="" onClick={this.handleonClick}>
 						<i class="fas fa-search-location"></i>
 					</a>
 					<div className="autocomplete-dropdown-container">

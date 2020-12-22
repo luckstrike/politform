@@ -11,7 +11,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(to right bottom, #b22234, #c8506d, #d37ba0, #d9a5c9, #e2cde7, #d9cce3, #d2cbdf, #cccad9, #a7a4bd, #837fa2, #5f5c88, #3c3b6e);
-    background-size: 600% 600%;
+    background-size: 400% 400%;
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;
@@ -39,10 +39,10 @@
 
 .logo {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 96px;
+    font-size: 72px;
 } 
 
 @media (max-width: 768px) {
@@ -59,6 +59,16 @@
     .logo {
         position: absolute;
         top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .logo {
+        position: absolute;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 48px;
