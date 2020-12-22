@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.search-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    height: 10px;
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    width: 600px;
+    z-index: 2;
+    outline: none;
+}
+
+.search-btn {
+    position: relative;
+    color: #000000;
+    float: right;
+    width: 44px;
+    height: 44px;
+    border-radius: 0px 50px 50px 0px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 10;
+    top: -15px;
+    left: 17px;
+    background-color: cadetblue;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: black;
+    font-size: 1rem;
+    transition: 0.4s;
+    line-height: 30px;
+    z-index: 1;
+}
+
+.input-suggestion{
+    background-color: white;
+    border-bottom: 1px black dotted;
+    display: flex;
+    align-items: center;
+    width: 568px;
+    font-size: 14px;
+    color: black;
+    position: relative;
+    z-index: 3;
+}
+
+.autocomplete-dropdown-container {
+    position: relative;
+    left: 5px;
+    top: -14px;
+}
+
+#map-marker {
+    padding-left: 5px;
+    padding-right: 5px;
+} 
+
+@media (max-width: 768px) {
+    .search-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        height: 20px;
+        border-radius: 40px;
+        border: none;
+        padding: 15px;
+        width: 400px;
+        z-index: 2;
+        outline: none;
+    }
+    
+    .search-btn {
+        position: relative;
+        color: #000000;
+        float: right;
+        width: 50px;
+        height: 50px;
+        border-radius: 0px 50px 50px 0px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        z-index: 10;
+        top: -15px;
+        left: 15px;
+        background-color: cadetblue;
+    }
+    
+    .search-txt {
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        color: black;
+        font-size: 1rem;
+        transition: 0.4s;
+        line-height: 30px;
+        z-index: 1;
+    }
+    
+    .input-suggestion{
+        background-color: white;
+        border-bottom: 1px black dotted;
+        display: flex;
+        align-items: center;
+        width: 360px;
+        font-size: 14px;
+        color: black;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .autocomplete-dropdown-container {
+        position: relative;
+        left: 5px;
+        top: -14px;
+    }
+
+    #map-marker {
+        padding-left: 5px;
+        padding-right: 5px;
+    } 
+}
+
+@media (max-width: 480px) {
+    .search-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        height: 20px;
+        border-radius: 40px;
+        border: none;
+        padding: 15px;
+        width: 240px;
+        z-index: 2;
+        outline: none;
+    }
+    
+    .search-btn {
+        position: relative;
+        color: #000000;
+        float: right;
+        width: 50px;
+        height: 50px;
+        border-radius: 0px 50px 50px 0px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        z-index: 10;
+        top: -15px;
+        left: 15px;
+        background-color: cadetblue;
+    }
+    
+    .search-txt {
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        color: black;
+        font-size: 1rem;
+        transition: 0.4s;
+        line-height: 30px;
+        z-index: 1;
+    }
+    
+    .input-suggestion{
+        background-color: white;
+        border-bottom: 1px black dotted;
+        display: flex;
+        align-items: center;
+        width: 200px;
+        font-size: 14px;
+        color: black;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .autocomplete-dropdown-container {
+        position: relative;
+        left: 5px;
+        top: -14px;
+    }
+
+    #map-marker {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
